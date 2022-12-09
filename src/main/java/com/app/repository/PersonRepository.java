@@ -1,0 +1,10 @@
+package com.app.repository;
+
+import com.app.model.person.Person;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface PersonRepository extends JpaRepository<Person,Long> {
+    Person findByNameAndSurname(String name, String surname);
+}

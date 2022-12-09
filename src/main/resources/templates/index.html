@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org"></html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Creative - Start Bootstrap Theme</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}"/>
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" th:href="@{/}">Pakiernia</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" th:href="@{/}">Strona główna</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{/person/create/form}">Dodaj ćwiczącego</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{/training/create/form}">Dodaj zajęcia</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{/person/list}">Lista wszystkich ćwiczących</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{/training/list}">Lista wszystkich zajęć</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+             <!-- About-->
+             <section class="page-section bg-primary" id="about">
+                <div class="container px-4 px-lg-5">
+                    <div class="row gx-4 gx-lg-5 justify-content-center">
+                        <div class="col-lg-8 text-center">
+                            <h2 class="text-white mt-0">System zarzadzania siłownią.</h2>
+                            <hr class="divider divider-light" />
+                            <p class="text-white-75 mb-4">Sytem sprawnie zarządza zajęciami w siłowni jak i ich uczestnikami.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- Portfolio-->
+        <div id="portfolio">
+            <div class="container-fluid p-0">
+                <div class="row g-0">
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg" title="Project Name">
+                            <img class="img-fluid" src="https://www.beautifulbody.pl/wp-content/uploads/2016/12/kobiety-trening-na-silowni.jpg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Dodaj ćwiczącego</div>
+                                <div class="project-name">Dodaj</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg" title="Project Name">
+                            <img class="img-fluid" src="https://testosterone.pl/wiedza/wp-content/uploads/2020/01/gf-XQZD-Fhtq-391t_modne-zajecia-fitness-1920x1080-nocrop.jpg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Dodaj zajęcia</div>
+                                <div class="project-name">Dodaj</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg" title="Project Name">
+                            <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR63AM-oXJZl1Gy_q0AWLOLAneLL_qY3u2x6oggDh7uAcEq3WOklNIDRYFt_Cr5JcskUHs&usqp=CAU" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Lista ćwiczących</div>
+                                <div class="project-name">Lista</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.jpg" title="Project Name">
+                            <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSWqGLwLpRvy5wv8RpdyOUO5sqANpy7x_I4dH4egscuskueDN4Vbdb-tqjn74PiGMgjhg&usqp=CAU" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Lista zajęć</div>
+                                <div class="project-name">Lista</div>
+                            </div>
+                        </a>
+                    </div>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container px-4 px-lg-5">
+                <h2 class="text-center mt-0">Co nas wyróżnia?</h2>
+                <hr class="divider" />
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Dbałość o szczegóły.</h3>
+                            <p class="text-muted mb-0">Zatrudniamy najlepszych specjalistów.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Nowoczesna technologia.</h3>
+                            <p class="text-muted mb-0">Sale wyposarzone w najlepszy sprzęt do ćwiczeń.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Jesteśmy w internecie.</h3>
+                            <p class="text-muted mb-0">Znajdziesz nas na Facebooku, Instagramie, Google.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Kontakt z klientem.</h3>
+                            <p class="text-muted mb-0">Do każdego klienta podchodzimy indywidualnie</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer-->
+        <footer class="bg-light py-5">
+            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2022 - M.B Corp/ Zajebane z internetów </div></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
