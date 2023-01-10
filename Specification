@@ -1,0 +1,38 @@
+
+Token - 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
+
+XXXX Siłownia
+
+
+ *Cwiczacy:
+v-dodanie
+v-edycja
+v-usuniecie
+v-wyswietlenie
+v-wyswietlenie listy zajec
+
+
+ *Zajecia:
+v-dodanie
+v-edycja
+v-usuniecie
+v-wyswietlenie
+v-wyswietlenie listy cwiczacych
+v-dodanie osoby do zajec
+
+v-zrob widok strony internetowej
+v-relacja many to many
+v-cwiczacy jako soft delete
+v-jak usune osobe to usuwa sie ze wszystkich zajec
+v-jak usune zajecia to usuwa tez je z listy zajec u cwiczacego
+v-refaktoring
+-dto'sy
+-walidacja encji
+-joiny: lista osob ktore nie chodza na zadne zajecia, najpopularniejszy typ zajec, najblizsze 5 zajec, zajecia na dzis
+-lista emaili
+-wysylanie emaila z info o nowych zajeciach
+-logowanie do systemu:
+  admin - dodaje pracownikow /tworzy im haslo i login
+  pracownik - ma mozliwos kozystania z systemu
+-zmien baze danych (mozliwosc przepiecia h2/mysql)
+-refaktoring
