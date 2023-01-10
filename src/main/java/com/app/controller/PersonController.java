@@ -3,10 +3,10 @@ package com.app.controller;
 import com.app.dto.PersonDtoRequest;
 import com.app.dto.TrainingDtoResponse;
 import com.app.dto.UpdatePersonDto;
-import com.app.model.training.Training;
 import com.app.model.person.Person;
-import com.app.service.TrainingService;
+import com.app.model.training.Training;
 import com.app.service.PersonService;
+import com.app.service.TrainingService;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.validation.Valid;
 import java.util.ArrayList;
@@ -50,7 +49,6 @@ public class PersonController {
     }
 
 
-
     @GetMapping("create/form")
     public String createForm() {
         return "person/addPerson";
@@ -64,7 +62,7 @@ public class PersonController {
     }
 
     @PostMapping("/save")
-    public String save( @Valid PersonDtoRequest personDto) {
+    public String save(@Valid PersonDtoRequest personDto) {
         Person person = new Person();
         person.setName(personDto.name());
         person.setSurname(personDto.surname());

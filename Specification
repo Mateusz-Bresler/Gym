@@ -28,6 +28,7 @@ v-jak usune zajecia to usuwa tez je z listy zajec u cwiczacego
 v-refaktoring
 -dto'sy
 -walidacja encji
+-obsługa błedów na stronie (co jeśli ktoś chce dodac osobe do zajec jak lista jest pełna, co jak ktos dodaje nie istniejaca osobe do zajec)
 -joiny: lista osob ktore nie chodza na zadne zajecia, najpopularniejszy typ zajec, najblizsze 5 zajec, zajecia na dzis
 -lista emaili
 -wysylanie emaila z info o nowych zajeciach
